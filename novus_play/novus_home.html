@@ -1,0 +1,96 @@
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <link rel="icon" href="img/chip_blue.png" sizes="16x16 32x32" type="image/png">
+	<link rel="stylesheet" href="style.css" type="text/css">
+	<link rel="stylesheet" href="iconfont.css" type="text/css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<meta name="description" content="A Computer Engineering Stuedent at UC Davis">
+	<meta name="keywords" content="Davis,California,Website,students,Software,Derek Lee">
+	<title>Derek Lee</title>
+</head>
+    
+<body>
+	<div id="top">
+		<div class="menu" onclick="moveit()">
+			<span class="invisible">MENU</span><img src="img/menu.png">
+		</div>
+	</div>
+	<div id="side_menu">
+		<img src="img/clear.png" id="clear" onclick="moveit()">
+		<div class="side_part" onclick="location.href='index.html';">
+		HOME
+		</div>
+		<div class="side_part" onclick="location.href='projects.html';">
+		PROJECTS
+		</div>
+		<div class="side_part" onclick="location.href='about.html';">
+		ABOUT
+		</div>
+		<div class="side_part" onclick="location.href='resume.html';">
+		RESUME
+		</div>
+		<div class="side_part" onclick="location.href='skills.html';">
+		SKILLS
+		</div>
+        <div class="side_part" onclick="location.href='AMC.html';">
+		WORKING AT A MOVIE THEATER
+		</div>
+	</div>
+	<div style="padding-top:2%;
+	margin-top:44px;position:fixed;top:0;z-index:-1;background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('img/tech1.jpg');
+  background-size: cover;height:85%;background-attachment: fixed;width:100%"></div>
+	<section id="first" style="background: none;height:85%;">
+		<br><br>
+		<h1 id="motto">
+			projects
+		</h1>
+	</section>
+	<section id="second" style="background-color:white">
+		<h1><b>MY PROJECTS</b></h1>
+		<p id="pfirst">
+		I am currently part of the <b>The Institute of Electrical and Electronics Engineers (IEEE) at UC Davis</b> long projects team working on multiple projects.</p>
+	</section>
+	
+	<section id="last" >
+		<b>CONTACT</b><BR>
+		<hr color="#444444" width="300px" size="1">
+		<a href="https://www.linkedin.com/in/derek-lee-9106a1140"><i class="fa fa-linkedin fa-2x social" aria-hidden="true"></i></a> 
+		<i class="fa fa-envelope fa-2x social" aria-hidden="true"></i></i></a>
+		<br><a href ="#email" class="social">derek8lee@gmail.com</a>
+	</section>
+    
+<script>
+	var isMoved = false;
+	side_menu = document.getElementById("side_menu");
+	topdiv =  document.getElementById("top");
+	first_section =  document.getElementById("first");
+	second_section =  document.getElementById("second");
+	third_section = document.getElementById("third");
+	fourth_section = document.getElementById("fourth");
+	last_section =  document.getElementById("last");
+	function moveit(){
+		if (isMoved==false){
+			side_menu.style.animation = "toLeft 0.5s forwards";
+			topdiv.style.animation = "evenLeft 0.5s forwards";
+			first_section.style.animation = "increase_marginLeft 0.5s forwards";
+			second_section.style.animation = "increase_marginLeft 0.5s forwards";
+			third_section.style.animation = "increase_marginLeft 0.5s forwards";
+			fourth_section.style.animation = "increase_marginLeft 0.5s forwards";
+			last_section.style.animation = "increase_marginLeft 0.5s forwards";
+			isMoved = true;
+		}
+		else{
+			side_menu.style.animation = "toRight 0.5s forwards";
+			topdiv.style.animation = "evenRight 0.5s forwards";
+			first_section.style.animation = "decrease_marginLeft 0.5s forwards";
+			second_section.style.animation = "decrease_marginLeft 0.5s forwards";
+			third_section.style.animation = "decrease_marginLeft 0.5s forwards";
+			fourth_section.style.animation = "decrease_marginLeft 0.5s forwards";
+			last_section.style.animation = "decrease_marginLeft 0.5s forwards";
+			isMoved = false;
+		}
+	}
+</script>
+</body>
+</html>

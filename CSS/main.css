@@ -1,0 +1,117 @@
+html{
+    background: url("flashing_light.webp")  no-repeat center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.profile{
+    height: 100%;
+    width: 300px;
+    border-radius: 5px;
+    top: 50%;
+    left: 50%;
+    margin: auto;
+    padding-left: 300px;
+    color: white;
+    text-align: right;
+}
+
+.pic{
+    margin: 0 auto;
+    height: 130px;
+    width: 130px;
+}
+
+#name-font {
+    font-family: 'Codystar', cursive;
+    font-weight: 700;
+    font-size: 72px;
+}
+
+body{
+	font-family:Roboto Light;
+	margin:0;
+}
+
+a{
+	text-decoration:none;
+	color:white;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.logos {
+    height: 30px;
+    width: 30px;
+    padding-right: 5px;
+}
+
+/*The 3 navbars*/
+.navbar {
+    margin-top: -40px;
+    margin-bottom: 0px;
+    padding-left: 840px;
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.navbar-default .nav-justified a {
+    margin: 5px 5px 0px 0px;
+}
+
+.navbar-default .nav-justified a:hover {
+    background-color: transparent;
+    -webkit-transition-duration: 0.78s;
+    transition-duration: 0.78s;
+    color: whitesmoke;
+}
+
+.navbar-inverse .nav-justified a:visited {
+    color: darkslategrey;
+}
+
+/*for the overall bar*/
+.navbar_bottom {
+  overflow: hidden;
+  background-color: black;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+/*for the words*/
+.navbar_bottom a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  border-right: 1px solid #bbb;
+}
+
+/* Change the link color on hover */
+.navbar_bottom a:hover {
+    /*background-color: #586073;*/
+    color: #cfd8dc;/*#ffca28;/*#FFA500;*/
+}
+
+
+/*for the contact buttons*/
+.social{
+	margin:10px;
+	color:#777777;
+}
+.social:hover{
+	color:#bbbbbb;
+}
+
+#nonclick:hover {
+    color: whitesmokes;
+}
+
