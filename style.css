@@ -450,7 +450,7 @@ textarea:focus{
 }
 
 #second_about{ 
-    background: url('images/ucdwater.jpg');
+    background: url('images/myucd1.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -500,7 +500,7 @@ textarea:focus{
 	padding-top:5%;
 	text-align:center;
 	padding-bottom:32px;
-    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('images/dc.jpg');
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('images/levis2.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     -webkit-background-size: cover;
