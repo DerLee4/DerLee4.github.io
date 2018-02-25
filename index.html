@@ -1,42 +1,79 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8"> 
-  <meta name="viewport" content="width=device-width, initial-scale-1">
+  <title>Derek Lee</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--Glyphicon-->
   <link rel="icon" href="images/chip_blue.png" sizes="16x16 32x32" type="image/png">
-  <link type="text/css" rel="stylesheet" href="CSS/main.css" >
-  <link rel="stylesheet" href="iconfont.css" type="text/css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <!--For LinkedIn and GitHub symbol -->    
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-  <link href="https://fonts.googleapis.com/css?family=Codystar" rel="stylesheet">    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel = "stylesheet">
+  <link rel="stylesheet" href="CSS/main.css">
+  <link rel="stylesheet" href="css/scramble.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  
 </head>
-
-<body>
-    <div class="background">
-        <div class="profile">
-          <h1 id="name-font"> Derek Lee</h1>
-          <p>Hi there! I'm Derek! I'm an aspiring computer engineer with an obsession with football, movies, and with what the future holds! Check out my profile below!</p>
-          <hr color="#444444" width="300px" size="1"> <!--makes a line-->
-          <a target="_blank" href="https://www.linkedin.com/in/derek-lee-9106a1140"><i class="fa fa-linkedin fa-2x social" aria-hidden="true"></i></a> 
-		  
-            <a href="mailto:derek8lee@gmail.com"><i class="fa fa-envelope fa-2x social" aria-hidden="true"></i></a>
-            
-          <a href="https://github.com/DerLee4"><i class="fa fa-github fa-2x social" aria-hidden="true"></i></i></a>
-        
-		  <br><a href="mailto:derek8lee@gmail.com" class="social">derek8lee@gmail.com</a>
-        </div> <!-- profile -->
-    </div> <!-- background -->
     
-    <div class="navbar_bottom">
-        <a href="projects.html" class="link">Projects</a>
-        <a href="about.html">About</a>
-        <a href="Resume.pdf">Resume</a>
-        <a href="AMC.html">Working At A Movie Theater</a>
-        <a id="nonclick">Computer Engineering 2020</a>
-    </div>  <!-- navbar_bottom -->
-            
+<body>
 
-            
-            
+<!-- Navbar -->
+<nav class="navbar navbar-default">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">Derek Lee</a>
+         
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <div id="page-wrap">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="projects.html" class="link">Projects</a></li>
+          <li><a href="about.html">About</a></li> 
+          <li><a href="Resume.pdf">Resume</a></li>
+          <li><a href="AMC.html">Working At A Movie Theater</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- First Container -->
+<div class="container-fluid bg-1 text-center">
+  <div class="row">
+    <div class="col-xs-12">
+      <div class="question">Who am I?</div>
+      <div id="messenger" ></div> 
+	  <div class="lightbulb"> 
+        <img src="images/flashing_light.webp" alt="Lightbulb" height=60% width=80%>
+      </div>
+    </div>
+  </div>
+</div>
+      
+<!-- Second Container -->
+<div class="container-fluid bg-2 text-center">
+  <div class="row">
+    <div class="col-xs-12">
+      <hr color="#444444" width="300px" size="1"> <!--makes a line-->
+      <div class="social">
+        <a target="_blank" href="https://www.linkedin.com/in/derek-lee-9106a1140"><i class="fa fa-linkedin social" aria-hidden="true"></i></a>
+        <a href="mailto:derek8lee@gmail.com"><i class="fa fa-envelope social" aria-hidden="true"></i></a> 
+        <a href="https://github.com/DerLee4"><i class="fa fa-github social" aria-hidden="true"></i></a> 
+      </div>    
+    </div>  
+  </div>     
+</div>
+    
 </body>
+    
+<script src="js/scramble.js"></script>    
+<script src="js/pageScroll.js"></script>
     
 </html>
