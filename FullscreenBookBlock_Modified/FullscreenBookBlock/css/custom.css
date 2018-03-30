@@ -17,7 +17,7 @@ body {
 	background: #fff;
 	font-weight: 400;
 	font-size: 100%;
-	color: #333;
+	color: white; /* font of body of text */
 	height: 100%;
 }
 
@@ -226,7 +226,7 @@ a:hover {
 	font-weight: 300;
 	font-size: 4em;
 	padding: 0 0 10px;
-	color: #333;
+	color: #D9B310; /* color of title of each slide */
 	margin: 0 1% 40px;
 	text-align: left;
 	box-shadow: 0 10px 0 rgba(0,0,0,0.02); /* color of bar under title of each slide */
