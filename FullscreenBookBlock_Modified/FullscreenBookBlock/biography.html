@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<title>Fullscreen Pageflip Layout with BookBlock</title>
+		<meta name="description" content="Fullscreen Pageflip Layout with BookBlock" />
+		<meta name="keywords" content="fullscreen pageflip, booklet, layout, bookblock, jquery plugin, flipboard layout, sidebar menu" />
+		<meta name="author" content="Codrops" />
+		<link rel="shortcut icon" href="../favicon.ico"> 
+		<link rel="stylesheet" type="text/css" href="css/jquery.jscrollpane.custom.css" />
+		<link rel="stylesheet" type="text/css" href="css/bookblock.css" />
+		<link rel="stylesheet" type="text/css" href="css/custom.css" />
+		<script src="js/modernizr.custom.79639.js"></script>
+	</head>
+	<body>
+		<div id="container" class="container">	
+
+			<div class="menu-panel">
+				<h3>Table of Contents</h3>
+				<ul id="menu-toc" class="menu-toc">
+					<li class="menu-toc-current"><a href="#item1">PROJECTS</a></li>
+					<li><a href="#item2">ABOUT</a></li>
+					<li><a href="#item3">WORKING AT A MOVIE THEATER</a></li>
+				</ul>
+				<div>
+                    <a href="../../index.html">&larr; Home Page</a>
+					<a href="Resume.pdf">Resume</a>
+                    <a href="CoachEdCert.pdf">Coaching Certificate</a>
+				</div>
+			</div>
+
+			<div class="bb-custom-wrapper">
+				<div id="bb-bookblock" class="bb-bookblock">
+					<div class="bb-item" id="item1">
+						<div class="content">
+							<div class="scroller">
+								<h2>PROJECTS</h2>
+								<p>I am currently part of the <b>The Institute of Electrical and Electronics Engineers (IEEE) at UC Davis</b> long projects team working on multiple projects.</p>
+							</div>
+						</div>
+					</div>
+					<div class="bb-item" id="item2">
+						<div class="content">
+							<div class="scroller">
+								<h2>ABOUT</h2>
+								<p>	I am currently a sophomore in <b>University of California, Davis</b> studying <b>Computer Engineering</b> with an expected graduation year of 2020. So far I have taken Introduction to Programming (Python), Programming and Problem-Solving (C), Software Development and Object-Oriented Programming (C++ and Linux).</p>
+
+								<p>I am a diehard <b>DC Comics</b> fan. My favorite character is Batman. His usage of technology to help others is truly admirable. </p>
+                                
+                                <p>Since I am from the Bay Area, I support all major sports teams, except the (Las Vegas) Raiders and Oakland As. I am a diehard <a href="http://www.49ers.com/" style="color: red">San Francisco 49ers</a> fan.  My second favorite sports team is the <a href="http://www.nba.com/warriors/" style="color: yellow">Golden State Warriors</a>. My third favorite sports team is the <a href="https://www.mlb.com/giants" style="color: orange">San Francisco Giants</a>.</p>
+
+								<p>I support as many UC Davis sports teams and clubs as possible. I was part of the <a href="http://ucdcrew.org" style="color: mediumblue">UC Davis Men's Crew</a> for a few months in my freshman year. I still am an avid supporter of the team. I am also a loyal fan of <a href="http://www.ucdavisaggies.com/sports/w-wpolo/ucda-w-wpolo-body.html" style="color: mediumblue">UC Davis Women's Water Polo team</a>, <a href="http://www.ucdavisaggies.com/sports/m-footbl/ucda-m-footbl-body.html" style="color: mediumblue">UC Davis Football team</a>, and <a href="http://www.ucdavisaggies.com/sports/m-baskbl/ucda-m-baskbl-body.html" style="color: mediumblue">UC Davis Men's Basketball team</a>.  </p>
+							</div>
+						</div>
+					</div>
+					<div class="bb-item" id="item3">
+						<div class="content">
+							<div class="scroller">
+								<h2>WORKING AT A MOVIE THEATER</h2>
+								<p>Movie theaters are usually a summer time job for high school students and college students. Knowing this, most people do not really care about the job.It does not help that employees are the scapegoats for guests to express their anger from whereever it may come from. Maybe they are having a bad day. Or maybe the movie was horrible. The most commont complaint is the prices. It is interesting how guests express their concern about the prices to the employees when the employees have no power. And what is more interesting is that knowing these prices are high, people still buy these high priced items. </p>
+                                
+                                <p>As one of the college students working at a movie theater staffed by mostly high schoolers, I made it my goal to be a role model and show the correct way of going to work. It does not matter what the pay is. What matters is putting out your best performance to correctly represent yourself and the company and to make the people you are serving happy. Not many people have this mindset. However, with the respect I have garnished, I believe I have shown these high schoolers what hard work, punctuality, and a positive attitude can do. </p>
+                                
+                                <p>With the inventions of smartphones, movies can be streamed anywhere. Therefore, movie theaters have to improve their movies experiences with state of the art technology. Having worked at a theater with a brand new IMAX and Dolby room, I can say that the classic American movie theater has come a long way. Technology has the power to improve the common day experience and elevate it to something completely new. What comes next for the movie industry is fascinating. Will there be other senses like smell added to the experience? Will the seats move along to the movie to the point it is a ride?</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<nav>
+					<span id="bb-nav-prev">&larr;</span>
+					<span id="bb-nav-next">&rarr;</span>
+				</nav>
+
+				<span id="tblcontents" class="menu-button">Table of Contents</span>
+
+			</div>
+				
+		</div><!-- /container -->
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+		<script src="js/jquery.mousewheel.js"></script>
+		<script src="js/jquery.jscrollpane.min.js"></script>
+		<script src="js/jquerypp.custom.js"></script>
+		<script src="js/jquery.bookblock.js"></script>
+		<script src="js/page.js"></script>
+		<script>
+			$(function() {
+
+				Page.init();
+
+			});
+		</script>
+	</body>
+</html>
