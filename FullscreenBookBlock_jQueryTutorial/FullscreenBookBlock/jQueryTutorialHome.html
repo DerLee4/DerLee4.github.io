@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+        <meta charset="utf-8" />
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<title>Fullscreen Pageflip Layout with BookBlock</title>
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+		<meta name="description" content="Fullscreen Pageflip Layout with BookBlock" />
+		<meta name="keywords" content="fullscreen pageflip, booklet, layout, bookblock, jquery plugin, flipboard layout, sidebar menu" />
+		<meta name="author" content="Codrops" />
+		<link rel="shortcut icon" href="../favicon.ico"> 
+		<link rel="stylesheet" type="text/css" href="css/bookblock.css" /> 
+		<link rel="stylesheet" type="text/css" href="css/custom.css" />
+        <link rel="stylesheet" type="text/css" href="jQuery_Lessons/ManipulateImages/css/style.css" />
+        <link rel="stylesheet" type="text/css" href="jQuery_Lessons/ManipulateVideos/css/style.css" />
+        <link rel="stylesheet" type="text/css" href="css/jquery.jscrollpane.custom.css" />
+		<script src="js/modernizr.custom.79639.js"></script>
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+	</head>
+	<body>
+		<div id="container" class="container">	
+
+			<div class="menu-panel">
+				<h3>Table of Contents</h3>
+				<ul id="menu-toc" class="menu-toc">
+					<li class="menu-toc-current"><a href="#item1">HOME PAGE</a></li>
+					<li><a href="#item2">USAGE OF BUTTONS TO MANIPULATE IMAGES USING JQUERY</a></li>
+					<li><a href="#item3">USAGE OF MOUSE EVENTS TO MANIPULATE VIDEOS USING JQUERY</a></li>
+				</ul>
+				<div>
+                    <a href="../../index.html">&larr; Home Page</a>
+					<a href="../FullscreenBookBlock/jQuery_Lessons/ManipulateImages/manipulateImages.html">USAGE OF BUTTONS TO MANIPULATE IMAGES USING JQUERY WORKSHOP</a>
+                    <a href="../FullscreenBookBlock/jQuery_Lessons/ManipulateVideos/manipulateVideos.html">USAGE OF MOUSE EVENTS TO MANIPULATE VIDEOS USING JQUERY</a>
+				</div>
+			</div>
+
+			<div class="bb-custom-wrapper">
+				<div id="bb-bookblock" class="bb-bookblock">
+					<div class="bb-item" id="item1">
+						<div class="content">
+							<div class="scroller">
+								<h2>HOME PAGE</h2>
+								<p>This is a jQuery tutorial designed for UC Davis Student Startup Center - Code a Live Website! series.</p>
+							</div>
+						</div>
+					</div>
+					<div class="bb-item" id="item2">
+						<div class="content">
+				            <div class="scroller">
+								<h2>USAGE OF BUTTONS TO MANIPULATE IMAGES USING JQUERY</h2>
+                                <div class="container">
+                                    <div class="jumbotron">
+                                        <button id="hide-button">Hide</button>
+                                        <button id="show-button">Show</button>
+                                        <button id="toggle-button">Toggle</button>
+                                        <button id="fade-out-button">Fade Out</button>
+                                        <button id="fade-in-button">Fade In</button>
+                                        <button id="fade-toggle-button">Toggle Fade</button>
+                                        <button id="up-button">Slide Up</button>
+                                        <button id="down-button">Slide Down</button>
+                                        <button id="slide-toggle-button">Toggle Slide</button>   
+                                    </div>
+                                </div> 
+                                <div class="container">
+                                    <h2>Image Gallery</h2>
+                                        <p>The .thumbnail class can be used to display an image gallery.</p>
+                                        <p>The .caption class adds proper padding and a dark grey color to text inside thumbnails.</p>
+                                        <p>Click on the images to enlarge them.</p>
+                                        <div class="row">
+                                            <div class="col-md-4">
+                                                <!-- Thumbnail is a Bootstrap class that gives the images rounded 1px border appearance -->
+                                                <div class="thumbnail">
+                                                    <!-- The following one line allows another image to appear when clicked on -->
+                                                    <a href="jQuery_Lessons/ManipulateImages/img/front_cropped.JPG" target="_blank">
+                                                        <div class="hide_show_toggle">
+                                                            <img src="jQuery_Lessons/ManipulateImages/img/front_cropped.JPG" alt="Front of Stadium" style="width:100%">                          
+                                                        </div>
+                                                        <div class="caption">
+                                                            <p>This picture will be affected by Hide, Show, and Toggle Buttons.</p>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="thumbnail">
+                                                    <a href="jQuery_Lessons/ManipulateImages/img/faithful_cropped.JPG" target="_blank">
+                                                        <div class="fadeOut_fadeIn_fadeToggle">
+                                                            <img src="jQuery_Lessons/ManipulateImages/img/faithful_cropped.JPG" alt="Faithful" style="width:100%">
+                                                        </div>
+                                                        <div class="caption">
+                                                            <p>This picture will be affected by Fade Out, Fade In, and Toggle Fade Buttons.</p>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="thumbnail">
+                                                    <a href="jQuery_Lessons/ManipulateImages/img/legendary_cropped.JPG" target="_blank">
+                                                        <div class="slideUp_slideDown_toggleSlide">
+                                                            <img src="jQuery_Lessons/ManipulateImages/img/legendary_cropped.JPG"  alt="Legendary Players List" style="width:100%">
+                                                        </div>
+                                                        <div class="caption">
+                                                            <p>This picture will be affected by Slide Up, Slide Down, and Toggle Slide Buttons.</p>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+							 </div>
+						  </div>
+					</div>
+					<div class="bb-item" id="item3">
+						<div class="content">
+							<div class="scroller">
+								<h2>USAGE OF MOUSE EVENTS TO MANIPULATE VIDEOS USING JQUERY</h2>   
+                                <div class="container">
+                                    <h2>Video Gallery</h2>
+                                    <div class="row">
+                                        <div class="col-xs-6">
+                                            <!-- Thumbnail is a Bootstrap class that gives the images rounded 1px border appearance -->
+                                            <div class="thumbnail">
+                                                <div class="video">
+                                                    <video src="jQuery_Lessons/ManipulateVideos/img/IMG_3960.MOV" alt="Inside AT&T Park" style="width:100%"></video>
+                                                </div>
+                                                <div class="caption">
+                                                    <p>This video will play when hovering above and pause when mouse is not hovering.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-6">
+                                            <!-- Thumbnail is a Bootstrap class that gives the images rounded 1px border appearance -->
+                                            <div class="thumbnail">
+                                                <div class="video">
+                                                    <video src="jQuery_Lessons/ManipulateVideos/img/IMG_3965.MOV" alt="SF Giants Warmup" style="width:100%"></video>
+                                                </div>
+                                                <div class="caption">
+                                                    <p>This video will play when hovering above and pause when mouse is not hovering.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<nav>
+					<span id="bb-nav-prev">&larr;</span>
+					<span id="bb-nav-next">&rarr;</span>
+				</nav>
+
+				<span id="tblcontents" class="menu-button">Table of Contents</span>
+
+			</div>
+				
+		</div><!-- /container -->
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+		<script src="js/jquery.mousewheel.js"></script>
+		<script src="js/jquery.jscrollpane.min.js"></script>
+		<script src="js/jquerypp.custom.js"></script>
+		<script src="js/jquery.bookblock.js"></script>
+		<script src="js/page.js"></script>
+		<script>
+			$(function() {
+
+				Page.init();
+
+			});
+		</script>
+        <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+
+        <script src='jQuery_Lessons/ManipulateImages/js/main.js'></script> 
+        <script src='jQuery_Lessons/ManipulateVideos/js/main.js'></script>
+
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+	</body>
+</html>

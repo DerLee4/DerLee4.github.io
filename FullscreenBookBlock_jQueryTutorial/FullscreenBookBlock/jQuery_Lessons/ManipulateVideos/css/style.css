@@ -1,0 +1,13 @@
+.jumbotron {
+    text-align: center;
+}
+button:hover{
+  color: #D9B310 !important; /* Gold Leaf */ 
+}
+body{
+    background-color:#222222;
+      color:grey;               /* Font color */ 
+}
+
+
+
