@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--- jQuery CDN --->
+        <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+        
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        
+        <!-- Overpass font --->
+        <link href="https://fonts.googleapis.com/css?family=Overpass+Mono" rel="stylesheet">
+        
+        <!-- For jQuery scrolling effect -->
+        <link href='http://fonts.googleapis.com/css?family=Noto+Serif:400italic' rel='stylesheet' type='text/css'>
+	    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,700' rel='stylesheet' type='text/css'>
+	    <link href='http://fonts.googleapis.com/css?family=Pacifico:400' rel='stylesheet' type='text/css'>
+	    <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    
+        <script type="text/javascript" src="js/jquery.tiltedpage-scroll.js"></script>
+        <link href='js/tiltedpage-scroll.css' rel='stylesheet' type='text/css'>
+ 
+        <!--- Scrolling effect --->
+        <script type="text/javascript" src="js/scroll-position.js"></script>
+        
+        <link rel="stylesheet" type="text/css" href="css/scroll.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        
+        <!-- For Videos -->
+        <link rel="stylesheet" type="text/css" href="css/video.css">
+    </head>
+    
+    <body>
+        
+        <!--- navigation bar --->
+        <header class="navbar-header">
+            <span class="navbar-brand" id="brandName">San Francisco</span>
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><span class="glyphicon glyphicon-menu-hamburger btn-lg"></span></button>
+        </header>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right" id="navigation">
+                <li><a href="../bideo.js-Modified/index.html">Home</a></li>
+                <li><a href="../Levi's_Stadium/Levi's_Stadium.html">Levi's Stadium</a></li>
+                <li><a href="ATT_Park.html">AT&T Park</a></li>
+            </ul>
+        </div>
+        
+        <!--- jumbotron --->
+        <!-- If you want jumbotron to take up the whole widh of the screen 
+             and take away the default white space on the sides,
+             put containeer inside of jumbtron. 
+             Other way around does not work. -->
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container">
+                <!-- Modifying contents of h1 in general will not work on below line. Need to modify in jumbotron code of CSS -->
+                <!-- <h1>Levis's Stadium</h1> -->
+                <button id="upper-button">Upper Section</button>
+                <img class="upper" >
+                    <!--<img src="img/lower.JPG" alt="Upper Section of Stadium" style="width:100%">-->
+                <button id="lower-button">Lower Section</button>
+                  <img id="lower">
+                    <!--<img src="img/lower.JPG" alt="Lower Section of Stadium" style="width:100%">-->             
+                <button id="field-button">Field Section</button>
+                 <img id="field">
+                    <!--<img src="img/lower.JPG" alt="Field of Stadium" style="width:100%">-->    
+            </div>
+        </div>
+        
+        <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+        <script src='js/main.js'></script> 
+        <script src='js/video.js'></script> 
+    
+    </body>
+
+</html>

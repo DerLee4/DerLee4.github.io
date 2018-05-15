@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--- jQuery CDN --->
+        <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+        
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        
+        <!-- Overpass font --->
+        <link href="https://fonts.googleapis.com/css?family=Overpass+Mono" rel="stylesheet">
+        
+        
+        
+        <!-- For jQuery scrolling effect -->
+        <link href='http://fonts.googleapis.com/css?family=Noto+Serif:400italic' rel='stylesheet' type='text/css'>
+	    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,700' rel='stylesheet' type='text/css'>
+	    <link href='http://fonts.googleapis.com/css?family=Pacifico:400' rel='stylesheet' type='text/css'>
+	    <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    
+        <script type="text/javascript" src="js/jquery.tiltedpage-scroll.js"></script>
+        <link href='js/tiltedpage-scroll.css' rel='stylesheet' type='text/css'>
+ 
+        <!--- Scrolling effect --->
+        <script type="text/javascript" src="js/scroll-position.js"></script>
+        
+        <link rel="stylesheet" type="text/css" href="css/scroll.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+    </head>
+    
+    <body>
+        
+        <!--- navigation bar --->
+        <header class="navbar-header">
+            <span class="navbar-brand" id="brandName">San Francisco</span>
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><span class="glyphicon glyphicon-menu-hamburger btn-lg"></span></button>
+        </header>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right" id="navigation">
+                <li><a href="../bideo.js-Modified/index.html">Home</a></li>
+                <li><a href="Levi's_Stadium.html">Levi's Stadium</a></li>
+                <li><a href="../AT&T_Park/ATT_Park.html">AT&T Park</a></li>
+            </ul>
+        </div>
+        
+        <!--- jumbotron --->
+        <!-- If you want jumbotron to take up the whole widh of the screen 
+             and take away the default white space on the sides,
+             put containeer inside of jumbtron. 
+             Other way around does not work. -->
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container">
+                <!-- Modifying contents of h1 in general will not work on below line. Need to modify in jumbotron code of CSS -->
+                <!-- <h1>Levis's Stadium</h1> -->
+            </div>
+        </div>
+        <!--
+        <div class="container">
+            <div class="grid">
+                <div class="row">
+                    <div class="col-md-12 col-sm-12 col-xs-12">
+                        <img id="faithful" src="img/faithful_cropped.JPG">
+                        <h3 id="faithful_heading">Before the Start of the Game</h3>
+                    </div>
+                    
+                    <div class="col-md-12 col-sm-12 col-xs-12">
+                        <img id="legendary" src="img/legendary_cropped.JPG">
+                        <h3 id="legendary_heading">The Legends</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        -->
+        <div class="wrapper">	
+            <div class="main">
+                <section class="page1">
+                    <div class="page_container">
+                        <!-- javascript:void(0) makes the href NOT go to top of page, which would have happened with # -->
+                        <h1 id="legends_heading"><a href="javascript:void(0)" ><br>The Legends</a></h1>
+                    </div>
+                </section>
+                <section class="page2">
+                    <div class="page_container">
+                        <h1 id="beforeTheGame_heading"><a href="javascript:void(0)">Before the Start of the Game<br></a></h1>
+                    </div>
+                </section>
+  	         
+            </div>
+        </div>
+        
+        <script src='js/main.js'></script> 
+    
+    </body>
+
+</html>

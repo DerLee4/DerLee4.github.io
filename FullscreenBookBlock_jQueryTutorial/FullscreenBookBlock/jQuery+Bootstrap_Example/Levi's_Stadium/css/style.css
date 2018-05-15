@@ -1,0 +1,66 @@
+html, body {
+    margin: 0px;
+    padding: 0px;
+}
+
+#navigation {
+    margin-right: 40px;
+    margin-top: 10px;
+    margin-left: 10px;
+    font-family: 'open sans';
+}
+
+#navigation: hover {
+    color:black;
+}
+
+#navigation a {
+    color: white;
+}
+
+#navigation a:hover 
+{
+  color: #D9B310 !important; /* Gold Leaf */
+}
+
+
+#brandName {
+    margin-top: 10px;
+    margin-left: 10px;
+    font-size: 35px;
+    font-family: 'open sans';
+    color: red;
+}
+
+.container{
+
+}
+
+.jumbotron {
+    background-image: url(../img/front_cropped.JPG);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 95vh;
+
+    /* Parallax effect */
+    background-attachment: fixed;
+    
+    text-align: center;  
+    
+    /* Modify words of jumbotron */
+    color: blue;
+}
+
+h1{
+    color:blue;
+}
+
+.grid {
+    text-align: center;  
+}
+
+img {
+
+}
+

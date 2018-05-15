@@ -1,0 +1,141 @@
+html {
+      height: 100%;
+    }
+    body {
+      background: black;
+      padding: 0;
+      text-align: center;
+      font-family: 'open sans';
+      position: relative;
+      margin: 0;
+      height: 100%;
+    }
+    
+    .wrapper {
+    	height: auto !important;
+    	height: 100%;
+    	margin: 0 auto; 
+    	overflow: hidden;
+    }
+    
+    a {
+      text-decoration: none;
+    }
+    
+    
+    
+    h1, h2 {
+      width: 100%;
+      float: left;
+    }
+    h1 {
+      margin-top: 100px;
+      color: #999;
+      margin-bottom: 5px;
+      font-size: 70px;
+      font-weight: 100;
+    }
+    h2 {
+      padding: 00px 20px 30px 20px;
+      box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      letter-spacing: 0px;
+      color: #888;
+      font-size: 20px;
+      line-height: 160%;
+      font-weight: 100;
+      margin-top: 10px;
+      margin-bottom: 0;
+    }
+    
+  
+
+    .main {
+      float: left;
+      width: 100%;
+      margin: 0 auto;
+    }
+    
+    .main h1 {
+      padding:20px 50px 10px;
+      float: left;
+      width: 100%;
+      font-size: 60px;
+      box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      font-weight: 100;
+      margin: 0;
+      padding-top: 55px;
+      font-family: 'Open Sans';
+      letter-spacing: -1px;
+      text-transform: capitalize;
+    }
+
+    .main {
+      margin-bottom: 350px;
+      overflow: hidden;
+    }
+    .tps-section {
+      width: 100% !important;
+      max-width: 1000px;
+      margin: 0 auto;
+      /* height of pictures container that are scrolling */
+      height: 550px;
+    }
+    
+    .tps-section .tps-wrapper {
+      border-radius: 5px;
+    }
+    .tps-section .tps-wrapper h1 {
+      position: relative;
+      /* height of shade of picture */    
+      height: 100%;
+      position: absolute;
+    }
+    .tps-section .tps-wrapper h1 a{
+      color: white;
+      position: absolute;
+      background: rgba(0,0,0,0.25);
+      width: 100%;
+      /* height of shade of picture */
+      height: 100%;
+      top: 0;
+      padding-top: 225px;
+      box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      left: 0;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 4px;
+      font-size: 20px;
+      font-size: 14px;
+      line-height: 190%;
+    }
+    
+    .tps-section .tps-wrapper h1 a small{
+      text-transform: none;
+      font-style: italic;
+      font-weight: 400;
+      font-family: noto serif;
+      letter-spacing: 1px;
+      font-size: 14px;
+    }
+    
+    /* last picture */
+    .tps-section:nth-child(1n+1) .tps-wrapper {
+      background: url(../img/faithful_black.png) center center;
+      background-size: cover;
+    }
+    
+    .tps-section:nth-child(2n+1) .tps-wrapper {
+      background:  url(../img/legendary_black.png) center center;
+      background-size: cover;
+    }
+    
+    .header {
+      overflow: hidden;
+      clear: both;
+    }
