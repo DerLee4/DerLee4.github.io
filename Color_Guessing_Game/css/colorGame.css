@@ -1,0 +1,78 @@
+body {
+	background-color: #232323;
+	margin: 0;
+	font-family: "Montserrat", "Avenir";
+}
+
+/* each colored square */
+.square{
+	width: 30%;
+	background: purple;
+	padding-bottom: 30%;
+	float: left;
+	margin: 1.66%;
+	border-radius: 15%; /* bigger percent -> more circular */
+	transition: background 0.6s; /* background so only targets background of the squares */
+	-webkit-transition: background 0.6s; /* for Safari */
+	-moz-transition: background 0.6s; /* for Mozilla */
+
+}
+
+
+/* contains all the colored squares */
+#container{
+	margin: 20px auto;	     /* centers the container holding the .square(s) */
+	max-width: 600px;
+}
+
+h1 {
+	text-align: center;
+	line-height: 1.1; /* to make the spacing between each line less */
+	font-weight: normal; /* to override h1 font weight */
+	color: white; 		/* font color white */
+	background: steelblue;
+	margin: 0;
+	text-transform: uppercase;
+	padding: 20px 0; /* 20px top and bottom, 0 left and right */ 
+}
+
+#colorDisplay {
+	font-size: 200%;
+}
+
+#message {
+	display: inline-block;
+	width: 20%; /* span takes 20% of screen */
+}
+
+#stripe{
+	background: white;
+	height: 30px;
+	text-align: center;
+	color:black;
+}
+
+.selected{
+	color: white;
+	background: steelblue;
+}
+
+button {
+	border: none;
+	background: none;
+	text-transform: uppercase;
+	height: 100%; /* to take up whole height of div */
+	font-weight: 700;
+	color: steelblue;
+	letter-spacing: 1px; /* to give spacing between each letter */
+	font-size: inherit;
+	transition: all 0.3s; /* transition delay for all the buttons */
+	-webkit-transition: all 0.3s; /* for Safari */
+	-moz-transition: all 0.3s; /* for Mozilla */
+	outline: none; /* removes border outline of selected button */
+}
+
+button:hover {
+	color: white;
+	background: steelblue;
+}
