@@ -2,7 +2,7 @@
 alert("CONNECTED!");
 */
 
-var numSquares = 6;
+var numSquares = 9;
 var colors = [];
 var pickedColor; // Target color
 var squares = document.querySelectorAll(".square");
@@ -23,16 +23,22 @@ function init(){
 function setupModeButtons(){
 	for(var i = 0; i < modeButtons.length; i++){
 		modeButtons[i].addEventListener("click", function(){
+			// removes selection from all 3 buttons
 			modeButtons[0].classList.remove("selected");
 			modeButtons[1].classList.remove("selected");
+			modeButtons[2].classList.remove("selected");
+			// adds selection to selected button
 			this.classList.add("selected");
 
 			// figure out how many squares to show
 			if(this.textContent === "Easy"){
 				numSquares = 3;
 			}
-			else{
+			else if(this.textContent === "Medium"){
 				numSquares = 6;
+			}
+			else{
+				numSquares = 9;
 			}
 
 			// pick new colors
@@ -54,14 +60,14 @@ function setupSquares(){
 			// compare color to pickedColor
 		
 			if(clickedColor === pickedColor){
-				messageDisplay.textContent = "Correct" // don't need ;
-				resetButton.textContent = "Play Again?" // don't need ;
+				messageDisplay.textContent = "Correct";
+				resetButton.textContent = "Play Again?";
 				changeColors(clickedColor);
 				h1.style.background = clickedColor;
 			}
 			else{
 				this.style.background = "#232323"; // fades wrongly chosen square to background color
-				messageDisplay.textContent = "Try Again" // don't need ;
+				messageDisplay.textContent = "Try Again";
 			}
 		});
 	}
@@ -77,7 +83,7 @@ function reset(){
 	// change colorDisplay to match picked Color
 	colorDisplay.textContent = pickedColor;
 	// change "Play Again?" message to "New Colors"
-	resetButton.textContent = "New Colors" // don't need ;
+	resetButton.textContent = "New Colors";
 	// resets win message to blank
 	messageDisplay.textContent = "";
 	// change colors of squares
