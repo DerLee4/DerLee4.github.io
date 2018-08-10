@@ -6,7 +6,7 @@ body {
 
 /* each colored square */
 .square{
-	width: 30%;
+	width: 30%; 
 	background: purple;
 	padding-bottom: 30%;
 	float: left;
@@ -42,7 +42,7 @@ h1 {
 
 #message {
 	display: inline-block;
-	width: 20%; /* span takes 20% of screen */
+	width: 10%; /* span takes 20% of screen */
 }
 
 #stripe{
