@@ -14,9 +14,8 @@ var Messenger = function(el){
     m.messages = [
       'I am a Computer Engineering major.',
       'I am a student of UC Davis.',
-      'I am building robots.',
-      'I am teaching kids programming.',
-      'I am building for a better future.'
+      'I am the Executive Director of SacHacks.',
+      'I am working on an AI Senior Design Project.'
     ];
     
     setTimeout(m.animateIn, 100);
